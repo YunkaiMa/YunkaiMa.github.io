@@ -129,6 +129,30 @@
         /* 双语容器 默认中文显示 */
         .en { display: none; }
         .zh { display: block; }
+
+        /* 学术链接按钮样式 */
+        .link-group {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .link-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #2c5282;
+            color: #ffffff !important;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            border: none;
+        }
+        .link-btn:hover {
+            background-color: #4299e1;
+            transform: translateY(-2px);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+        }
     </style>
 </head>
 <body>
@@ -186,20 +210,24 @@
             <div class="zh">
                 <h2>个人简介</h2>
                 <p>面向“制造强国”战略需求，长期从事机器人三维感知与自主作业研究，提出了多场景高精度感知与智能操作方法，解决了微装配机器人智能控制、FAST靶标三维感知与柔顺拆装、大型舱段自主对接、复杂焊缝自主焊接等关键技术难题，在国家重大项目中得到应用并获得认可；作为项目负责人主持国家科技重大专项课题、国家重点研发计划子课题、国家自然科学基金青年基金（C类）等重要科研项目；担任中国人工智能学会智能机器人专委会委员、中国指挥与控制学会无人系统专委会委员；在机器人和自动化领域发表高水平学术论文20余篇，其中以第一/通讯作者身份发表顶刊/顶会14篇，涉及机器人、自动化领域的国际刊物IEEE TII、TIE、TASE、TIM等，人工智能、模式识别领域的国际刊物PR、ESWA, 国际会议ICCV、ICRA、CVPR、CASE等；目前已申请国家发明专利20余件，登记软件著作权10余件，参与制定国家标准1项。</p>
-                <p>个人主页：<a href="https://ia.cas.cn/rcdw/fyjy/202603/t20260325_8174669.html" target="_blank">https://ia.cas.cn/rcdw/fyjy/202603/t20260325_8174669.html</a></p>
-                <p>Google 学术主页：<a href="https://scholar.google.com/citations?user=AOiXnrwAAAAJ&sortby=pubdate" target="_blank">https://scholar.google.com/citations?user=AOiXnrwAAAAJ&sortby=pubdate</a></p>
-                <p>ORCID主页：<a href="https://orcid.org/0000-0002-7667-1631" target="_blank">https://orcid.org/0000-0002-7667-1631</a></p>
-                <p>IEEE主页：<a href="https://ieeexplore.ieee.org/author/37088558940" target="_blank">https://ieeexplore.ieee.org/author/37088558940</a></p>
-                <p>ResearchGate主页：<a href="https://www.researchgate.net/profile/Yunkai-Ma-2" target="_blank">https://www.researchgate.net/profile/Yunkai-Ma-2</a></p>
+                <div class="link-group">
+                    <a href="https://ia.cas.cn/rcdw/fyjy/202603/t20260325_8174669.html" target="_blank" class="link-btn">个人主页</a>
+                    <a href="https://scholar.google.com/citations?user=AOiXnrwAAAAJ&sortby=pubdate" target="_blank" class="link-btn">Google 学术</a>
+                    <a href="https://orcid.org/0000-0002-7667-1631" target="_blank" class="link-btn">ORCID</a>
+                    <a href="https://ieeexplore.ieee.org/author/37088558940" target="_blank" class="link-btn">IEEE</a>
+                    <a href="https://www.researchgate.net/profile/Yunkai-Ma-2" target="_blank" class="link-btn">ResearchGate</a>
+                </div>
             </div>
             <div class="en">
                 <h2>Biography</h2>
                 <p>Facing the strategic demand of "manufacturing power", he has been engaged in the research of robot three-dimensional perception and autonomous operation for a long time, and proposed a multi-scene high-precision perception and intelligent operation method, which solved the key technical problems such as intelligent control of micro-assembly robot, three-dimensional perception and flexible disassembly of FAST target, autonomous docking of large cabins, and autonomous welding of complex welds, and was applied and recognized in major national projects. As the project leader, he presided over important scientific research projects such as major national science and technology projects, sub-projects of national key R&D plans, and youth funds of the National Natural Science Foundation (Class C); He is a member of the Intelligent Robot Committee of China Artificial Intelligence Society and the Unmanned System Committee of China Command and Control Society. He has published more than 20 high-level academic papers in the field of robotics and automation, including 14 top journals/conferences as the first correspondent, involving international journals such as IEEE TII, TIE, TASE and TIM in the field of robotics and automation, international journals such as PR and ESWA in the field of artificial intelligence and pattern recognition, and international conferences such as ICCV, ICRA, CVPR and CASE. At present, it has applied for more than 20 national invention patents, registered more than 10 software copyrights, and participated in the formulation of one national standard.</p>
-                <p>Personal Homepage: <a href="https://ia.cas.cn/rcdw/fyjy/202603/t20260325_8174669.html" target="_blank">https://ia.cas.cn/rcdw/fyjy/202603/t20260325_8174669.html</a></p>
-                <p>Google Scholar Homepage: <a href="https://scholar.google.com/citations?user=AOiXnrwAAAAJ&sortby=pubdate" target="_blank">https://scholar.google.com/citations?user=AOiXnrwAAAAJ&sortby=pubdate</a></p>
-                <p>ORCID Homepage: <a href="https://orcid.org/0000-0002-7667-1631" target="_blank">https://orcid.org/0000-0002-7667-1631</a></p>
-                <p>IEEE Homepage: <a href="https://ieeexplore.ieee.org/author/37088558940" target="_blank">https://ieeexplore.ieee.org/author/37088558940</a></p>
-                <p>ResearchGate Homepage: <a href="https://www.researchgate.net/profile/Yunkai-Ma-2" target="_blank">https://www.researchgate.net/profile/Yunkai-Ma-2</a></p>
+                <div class="link-group">
+                    <a href="https://ia.cas.cn/rcdw/fyjy/20260325_8174669.html" target="_blank" class="link-btn">Personal Homepage</a>
+                    <a href="https://scholar.google.com/citations?user=AOiXnrwAAAAJ&sortby=pubdate" target="_blank" class="link-btn">Google Scholar</a>
+                    <a href="https://orcid.org/0000-0002-7667-1631" target="_blank" class="link-btn">ORCID</a>
+                    <a href="https://ieeexplore.ieee.org/author/37088558940" target="_blank" class="link-btn">IEEE</a>
+                    <a href="https://www.researchgate.net/profile/Yunkai-Ma-2" target="_blank" class="link-btn">ResearchGate</a>
+                </div>
             </div>
         </div>
 
@@ -385,7 +413,7 @@
                 document.documentElement.lang = 'zh-CN';
             }else{
                 zhDom.forEach(item => item.style.display = 'none');
-                enDom.forEach(item => item.style.display = 'block');
+                enDom.forEach(item.style.display = 'block');
                 document.documentElement.lang = 'en';
             }
         }
