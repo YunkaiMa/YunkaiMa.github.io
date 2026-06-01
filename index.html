@@ -495,9 +495,29 @@
             总访问量: <span id="busuanzi_value_site_pv"></span> | 访客数: <span id="busuanzi_value_site_uv"></span>
         </span>
         <span class="en" style="display: none;">
-            Total Visits: <span id="busuanzi_value_site_pv"></span> | Unique Visitors: <span id="busuanzi_value_site_uv"></span>
+            Total Visits: <span id="busuanzi_pv_en"></span> | Unique Visitors: <span id="busuanzi_uv_en"></span>
         </span>
     </div>  
+
+    <script>
+        // 自动同步中英文访问量数据
+        window.addEventListener('load', function() {
+            function syncCount() {
+                const pv = document.getElementById('busuanzi_value_site_pv');
+                const uv = document.getElementById('busuanzi_value_site_uv');
+                const pvEn = document.getElementById('busuanzi_pv_en');
+                const uvEn = document.getElementById('busuanzi_uv_en');
+                
+                if (pv && uv && pvEn && uvEn && pv.textContent) {
+                    pvEn.textContent = pv.textContent;
+                    uvEn.textContent = uv.textContent;
+                } else {
+                    setTimeout(syncCount, 100);
+                }
+            }
+            syncCount();
+        });
+    </script>
     
 </body>
 </html>
